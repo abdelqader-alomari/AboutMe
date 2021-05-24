@@ -1,0 +1,18 @@
+body {
+    padding: 10px;
+    margin: 5px;
+    margin-top: 50px;
+    background-image: url("https://www.thesprucecrafts.com/thmb/Hgrhz3pFYX7bKHzvszw93cswF_4=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/full-frame-shot-of-jigsaw-puzzle-688077713-5acd55f53037130037ac044b.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+p {
+    margin-top: 50px;
+    font-weight: bold;
+    color: rgb(29, 1, 82);
+}
+h1 {
+    font-weight: bolder;
+    font-size: xx-large;
+    padding-left: 100px;
+}
