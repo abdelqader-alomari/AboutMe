@@ -1,6 +1,5 @@
 'use strict';
 let userName = prompt('What is your name?');
-//console.log(userName);
 alert('You are so welcome ' + userName);
 let score = 0;
 let likeCoding = prompt('Do you like Coding?');
@@ -27,7 +26,6 @@ if(userCountry === 'yes' || userCountry === 'y'){
 }
 let swimFav = prompt('Do you think that I like swimming?');
 swimFav = swimFav.toLowerCase();
-//console.log(swimFav);
 switch(swimFav){
     case 'yes':
     case  'y':
@@ -41,7 +39,6 @@ switch(swimFav){
 }
 let userOnline = prompt('Are you working or studing online?');
 userOnline = userOnline.toLowerCase();
-//console.log(userOnline);
 switch(userOnline){
     case 'yes':
     case 'y':
@@ -55,7 +52,6 @@ switch(userOnline){
 }
 let langTalk = prompt('Do you think that I can speak turkish?');
 langTalk = langTalk.toLowerCase();
-// console.log(langTalk);
 switch(langTalk){
     case 'yes':
     case 'y':
@@ -82,7 +78,6 @@ for(let i=0;i<4;i++){
 }
 alert('I studied Engineering in Univerity of Jordan and graduated in 2017');
 let favSports = ['Walking','Football','Swimming','Horse riding','Volley ball','Tennis'];
-// console.log(favSports);
 for (let a=0; a<6;a++){
     let guessSport = prompt('What do you think are my favorite sports?');
 if (guessSport === 'Walking' || guessSport === 'Football' || guessSport === 'Swimming' || guessSport === 'Horse riding' || guessSport === 'Volley ball' || guessSport === 'Tennis'){
@@ -101,12 +96,3 @@ if(score > 3){
 else {
     alert('Uunfortunately, your score is ' + score + 'out of 7 ' + ',so you need to attempt later.');
 }
-  // if(guessSport == favSports.some){
-// let guessSport = prompt('What do you think are my favorite sports?')
-// for ( let i=0; i<favSports.length; i++ )
-// {
-//   for ( let j=0; j<favSports[i].length; j++ )
-//   {
-//     alert ( favSports[i][j][0] + " is a " + favSports[i][j][1] + " year old " + favSports[i][j][2] );
-//   }
-// }
