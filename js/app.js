@@ -2,7 +2,7 @@
 let userName = prompt('What is your name?');
 alert('You are so welcome ' + userName);
 let score = 0;
-let likeCoding = prompt('Do you like Coding?');
+function checkLiking() { let likeCoding = prompt('Do you like Coding?');
 likeCoding = likeCoding.toLowerCase();
 //console.log(likeCoding);
 if(likeCoding ==='yes' || likeCoding === 'y'){
@@ -13,7 +13,9 @@ if(likeCoding ==='yes' || likeCoding === 'y'){
 }else{
     alert('Next time please enter yes or no!');
 }
-let userCountry = prompt('Are you from Jordan?');
+}
+checkLiking();
+function gettingCountry() {let userCountry = prompt('Are you from Jordan?');
 userCountry = userCountry.toLowerCase();
 //console.log(userCountry);
 if(userCountry === 'yes' || userCountry === 'y'){
@@ -24,7 +26,9 @@ if(userCountry === 'yes' || userCountry === 'y'){
 }else{
     alert('Next time please enter yes or no!');
 }
-let swimFav = prompt('Do you think that I like swimming?');
+}
+gettingCountry();
+function gettingfavSwim() {let swimFav = prompt('Do you think that I like swimming?');
 swimFav = swimFav.toLowerCase();
 switch(swimFav){
     case 'yes':
@@ -37,7 +41,9 @@ switch(swimFav){
         alert('oooh really that what you think?! I like swimming');
         break;
 }
-let userOnline = prompt('Are you working or studing online?');
+}
+gettingfavSwim();
+function userStudyOnline() {let userOnline = prompt('Are you studing online?');
 userOnline = userOnline.toLowerCase();
 switch(userOnline){
     case 'yes':
@@ -50,7 +56,9 @@ switch(userOnline){
         alert('so you did not face that nice experience');
         break;
 }
-let langTalk = prompt('Do you think that I can speak turkish?');
+}
+userStudyOnline();
+function guessTalkLang() {let langTalk = prompt('Do you think that I can speak turkish?');
 langTalk = langTalk.toLowerCase();
 switch(langTalk){
     case 'yes':
@@ -63,6 +71,9 @@ switch(langTalk){
         score++;
         break;
 }
+}
+guessTalkLang();
+function getAge(){
 for(let i=0;i<4;i++){
     let guessAge = prompt('May you guess my year of graduation?');
     guessAge = Number(guessAge);
@@ -77,19 +88,25 @@ for(let i=0;i<4;i++){
     }
 }
 alert('I studied Engineering in Univerity of Jordan and graduated in 2017');
-let favSports = ['Walking','Football','Swimming','Horse riding','Volley ball','Tennis'];
-for (let a=0; a<6;a++){
-    let guessSport = prompt('What do you think are my favorite sports?');
-if (guessSport === 'Walking' || guessSport === 'Football' || guessSport === 'Swimming' || guessSport === 'Horse riding' || guessSport === 'Volley ball' || guessSport === 'Tennis'){
-    alert('Yes, right');
-    score++;
-    break;
 }
-else {
-    alert('You should try again');
+getAge();
+function userFavSport() {
+let favSports = ['walking','football','swimming','horse riding','volley ball','tennis'];
+outerLoop : for (let a=0; a<6;a++){
+let guessSport = prompt('What do you think are my favorite sports?');
+for( let i=0 ; i<favSports.length ; i++){
+    if(guessSport===favSports[i]){
+        alert('Yes,Right');
+        score++;
+        break outerLoop;
 }
 }
-alert('My favorite sports are ' + favSports);
+if (a === 5){
+alert('You finished your attempts , My favorite sports are ' + favSports);
+}
+}
+}
+userFavSport();
 if(score > 3){
     alert('Congrats, Your score is ' + score + ' out of 7');
 }
